@@ -1,0 +1,63 @@
+@import "_variables.css";
+
+/* Nav bar */
+
+.nav-item.active a {
+  color: var(--primary) !important;
+}
+
+/* cards */
+
+.box-plain,
+.box-border,
+.box-pink {
+  border-radius: 20px;
+  height: 250px;
+  width: 250px;
+  margin: 30px 5px 15px 5px;
+  box-shadow: 1px 1px 1px 1px #ccc ;
+}
+
+.box-plain {
+  background-color: var(--background-color);
+}
+
+.box-border {
+  border: 1px solid var(--primary);
+  background-color: #fff;
+}
+
+.box-pink {
+  border: 1px solid #fff;
+  background-color: var(--primary);
+}
+
+/* Footer */
+
+footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 45px;
+  background-color: var(--background-color);
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: block;
+    height: 70px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .box-plain,
+  .box-border,
+  .box-pink {
+    border-radius: 20px;
+    height: 300px;
+    width: 85%;
+    margin: 20px auto;
+  }
+}
